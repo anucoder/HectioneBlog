@@ -1,0 +1,78 @@
+.navbar.transparent{
+   border-width: 0px;
+   -webkit-box-shadow: 0px 0px;
+   box-shadow: 0px 0px;
+   background-color: rgba(171, 208, 247, 0.2);
+}
+
+
+.navbar-brand.brandstyle
+{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 4em;
+    color:#8ac7ef;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: 'Bitter', serif;
+  font-size: 1.5em;
+  color: #8ac7ef;
+  }
+
+.home{
+font-family: 'Niconne', cursive;
+}
+
+.box
+{
+  margin-top: 120px;
+  margin-bottom: 150px;
+  text-align: center;
+  padding :20px;
+  color:black;
+  text-shadow: 0px 2px 0px #e9e2c9;
+}
+
+.box:hover
+{
+  text-shadow:0px 2px 2px #e9e2c9;
+   background-color: rgba(171, 208, 247, 0.2);
+
+}
+.formstyle
+{
+   background-color:#8ac7efa1;
+  padding:20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+p
+{
+  background-color: #c8e1fbd9;
+  padding:20px;
+}
+
+body{
+  background-image: url(/static/media/sunrise2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+
+#blog
+{
+  margin-top : 50px;
+}
+
+form{
+  display: block;
+}
+
+
+#posttitle
+{
+  color:yellow;
+}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block prenavbar %}
+{% endblock %}
+{% block navbar %}
+<div class="home">
+<div class="container">
+  <div id="blog">
+    {% for post in object_list %}
+
+      <div class="post">
+
+          <h1 id='posttitle'><a href="#">{{ post.title }}</a></h1>
+          <div class="date">
+              <p>Published on: {{ post.created_on|date:"D M Y"}}</p>
+          </div>
+          <div class="postcontent">
+              <p>{{ post.content }}</p>
+          </div>
+      </div>
+  {% endfor %}
+  </div>
+</div>
+</div>
+{% endblock%}
+{% block postnavbar %}
+{% endblock%}

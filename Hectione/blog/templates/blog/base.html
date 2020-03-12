@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hectione</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    {# Google font #}
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    {# Custom CSS#}
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+  </head>
+  <body>
+
+    {% block prenavbar %}
+    {% endblock %}
+      <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light background transparent">
+      <a class="navbar-brand brandstyle mr-auto" href="{% url 'blog:index' %}">Hectione</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto">
+          <!-- empty -->
+        </div>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link mr-sm-2" href="{% url 'blog:about' %}">About</a>
+          <a class="nav-item nav-link mr-sm-2" href="{% url 'blog:post_list' %}">Blog</a>
+          <a class="nav-item nav-link " href="{% url 'blog:contact' %}">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+
+    {% block navbar %}
+    {% endblock %}
+
+    <!-- conatiner -->
+    {% block postnavbar %}
+    {% endblock %}
+  </body>
+</html>
